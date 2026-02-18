@@ -1,59 +1,53 @@
 
-# Delicatto – Brigadeiros Gourmet e Doces Artesanais
 
-Este repositório contém o código-fonte do site da **Delicatto**, uma marca dedicada à produção artesanal de brigadeiros gourmet, queques e edições especiais para datas comemorativas, localizada em Lo Barnechea, Santiago, Chile.
+# Projeto: Site Estático – Delicatto
 
-## 🌟 Sobre a Delicatto
+Este repositório contém o código-fonte de um site estático desenvolvido para a marca Delicatto. O projeto utiliza apenas HTML, CSS e JavaScript puro, sem frameworks ou dependências externas além de bibliotecas de plugins JS e fontes Google.
 
-A Delicatto nasceu do propósito de trazer ao Chile a paixão pelo doce mais tradicional do Brasil: o brigadeiro. Fundada por Lidiane, brasileira apaixonada por confeitaria, a marca busca compartilhar sabores autênticos, criatividade e carinho em cada receita, tornando momentos especiais ainda mais doces.
+## 📁 Estrutura de Pastas
 
-## 🧁 Produtos
+- `index.html` – Página inicial
+- `productos.html` – Página de produtos
+- `sobre-nosotros.html` – Sobre a empresa
+- `contactanos.html` – Contato
+- `css/` – Arquivos de estilo (CSS e SCSS)
+- `js/` – Scripts JavaScript e plugins
+- `images/` – Imagens do site
+- `upload/` – Imagens de produtos, banners e catálogo em PDF
 
-- **Brigadeiros Gourmet**: Tradicional, Coco (Beijinho), Pistacho, Nuez, Dulce de Leche, Chocolate Branco e outros sabores exclusivos.
-- **Queques**: Bolos artesanais de cenoura, limão, marmolado e mais.
-- **Edições Especiais**: Ovos de Páscoa gourmet, caixas temáticas e novidades para datas comemorativas.
+## 🛠️ Tecnologias Utilizadas
 
-Todos os produtos são feitos à mão, com ingredientes selecionados e apresentação premium, ideais para presentear, celebrar ou saborear em qualquer ocasião.
+- HTML5
+- CSS3 (com organização SCSS)
+- JavaScript (plugins e scripts customizados)
+- Bootstrap (via CDN)
+- Google Fonts
 
-## 🎯 Diferenciais
+## 🚀 Como Executar Localmente
 
-- Produção artesanal e limitada
-- Ingredientes de alta qualidade
-- Entrega em todo o Chile
-- Perfeito para presentes e eventos
-
-## 📄 Estrutura do Projeto
-
-- `index.html` – Página inicial com destaques, categorias e chamada para o catálogo
-- `productos.html` – Catálogo detalhado dos produtos
-- `sobre-nosotros.html` – História da marca e fundadora
-- `contactanos.html` – Formulário de contato, localização e informações de contato
-- `css/` – Estilos customizados e fontes
-- `js/` – Scripts de interação e plugins
-- `images/` e `upload/` – Imagens dos produtos, banners e identidade visual
-
-## 📥 Catálogo para Download
-
-O menu completo pode ser baixado em PDF diretamente pelo site, facilitando o acesso ao portfólio de produtos.
-
-## 📞 Contato
-
-- **Localização:** Lo Barnechea, Santiago, Chile
-- **Telefone:** +56 9 2386-3228
-- **E-mail:** delicattocl@gmail.com
-
-## 💻 Como rodar o projeto localmente
-
-1. Clone este repositório:
+1. Clone o repositório:
 	```
 	git clone <url-do-repositorio>
 	```
-2. Abra a pasta no seu navegador ou utilize uma extensão de servidor local (ex: Live Server no VS Code).
-3. Acesse `index.html` para visualizar o site.
+2. Abra a pasta do projeto no seu editor ou navegador.
+3. Clique duas vezes em `index.html` ou utilize uma extensão de servidor local (ex: Live Server no VS Code) para melhor compatibilidade de rotas.
 
-## 📚 Créditos
+## 📦 Dependências
 
-Site desenvolvido para a marca Delicatto, com foco em experiência visual, responsividade e facilidade de navegação.
+O projeto não possui dependências de build ou instalação. Todos os arquivos necessários já estão incluídos no repositório.
 
----
-Sinta o sabor do Brasil em cada detalhe! 🇧🇷🍫
+## 📄 Observações Técnicas
+
+- O site é responsivo e utiliza Bootstrap para grid e componentes básicos.
+- Os estilos customizados estão em `css/style.css` e organizados em SCSS na pasta `scss/`.
+- As imagens e uploads estão organizados em subpastas dentro de `images/` e `upload/`.
+- Scripts de interação e plugins estão em `js/`.
+- O menu em PDF pode ser atualizado em `upload/DELICATTO-Catalogo.pdf`.
+
+## 👨‍💻 Desenvolvimento
+
+Para customizações, edite os arquivos HTML, CSS/SCSS ou JS conforme necessário. Não há integração com backend ou banco de dados.
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
