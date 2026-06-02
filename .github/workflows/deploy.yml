@@ -10,6 +10,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Build image
+        run: docker build -t localhost:5000/delicatto-site:latest .
+
+      - name: Push image via SSH tunnel
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh -o StrictHostKeyChecking=no -fN -L 5000:localhost:5000 root@${{ secrets.VPS_HOST }}
+          sleep 2
+          docker push localhost:5000/delicatto-site:latest
+
       - name: Deploy no VPS
         uses: appleboy/ssh-action@v1
         with:
@@ -18,7 +30,5 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
             cd /root/delicatto
-            git pull origin main
-            docker build -t localhost:5000/delicatto-site:latest .
-            docker push localhost:5000/delicatto-site:latest
+            docker compose pull
             docker compose up -d
