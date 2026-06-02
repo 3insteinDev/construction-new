@@ -1,0 +1,8 @@
+.git
+.github
+.gitignore
+.dockerignore
+scss
+*.md
+delicatto.conf
+docker-compose.yml
